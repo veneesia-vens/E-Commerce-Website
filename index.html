@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop House</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <!-- ====== HOME SECTION ======-->
+
+    <section class="home" id="home">
+        <nav>
+            <div class="logo">
+                <h1>shop <span class="name">House</span></h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#hot-deals">Hot deals</a></li>
+                <li><a href="#new-products">New products</a></li>
+                <li><a href="#shop-cart">Shop cart</a></li>
+                <li><a href="#top-selling">Top selling</a></li>
+            </ul>
+            <button class="btn-cart">
+                Cart 
+                <i class="fa fa-cart-plus" id="cart-icon"></i>
+            </button>
+            <div class="cart-count">0</div>
+        </nav>
+
+        <!-- ====== CART SECTION ======-->
+
+        <div class="cart">
+            <div class="cart-title">Your Cart</div>
+            <div class="cart-content"></div>
+            <div class="total">
+                <div class="total-title">Sub Total</div>
+                <div class="total-price">RS.0</div>
+            </div>
+            <button class="btn-buy">Place order</button>
+            <i class="fa fa-close" id="cart-close"></i>
+        </div>
+
+        <!-- ====== BANNER SECTION ======-->
+
+        <div class="banner">
+            <div class="collection">
+                <img src="home-images/SAMSUNG Galaxy Book.webp">
+                <div class="overlay">
+                    <h2>laptop collection</h2>
+                    <button class="btn-shop"><a href="#shop-cart">Shop now</a>
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="collection">
+                <img src="home-images/realme Pad X 4 GB RAM.webp">
+                <div class="overlay">
+                    <h2>Tablet collection</h2>
+                    <button class="btn-shop"><a href="#shop-cart">Shop now</a>
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="collection">
+                <img src="home-images/GoPro Hero9.webp">
+                <div class="overlay">
+                    <h2>Camera collection</h2>
+                    <button class="btn-shop"><a href="#shop-cart">Shop now</a>
+                        <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== HOT DEALS SECTION ======-->
+
+    <section class="hot-deals" id="hot-deals">
+        <div class="hot-deals-box">
+            <div class="hot-deals-time">
+                <div class="count-down">
+                    <h3>03</h3>
+                    <p>days</p>
+                </div>
+                <div class="count-down">
+                    <h3>12</h3>
+                    <p>hours</p>
+                </div>
+                <div class="count-down">
+                    <h3>45</h3>
+                    <p>days</p>
+                </div>
+                <div class="count-down">
+                    <h3>40</h3>
+                    <p>secs</p>
+                </div>
+            </div>
+            <div class="hot-deal-content">
+                <h2>Hot deal this week</h2>
+                <h4>New collection up to 50% off</h4>
+                <button class="btn-shop-now"><a href="#shop-cart">Shop now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== NEW PRODUCTS SECTION ======-->
+
+    <section class="new-products" id="new-products">
+        <h1>New Products</h1>
+        <div class="product-container">
+            <div class="product-box">
+                <p>new</p>
+                <img src="new-product-images/Apple_iPhone_14.png">
+                <h2>Mobile</h2>
+                <h3>Apple iPhone 14</h3>
+                <h4>Rs.1,14,990.00</h4>
+            </div>
+            <div class="product-box">
+                <p>new</p>
+                <img src="new-product-images/APPLE_iPad_(9th_Gen).png">
+                <h2>Tablet</h2>
+                <h3>Apple iPad</h3>
+                <h4>Rs.31,990.00</h4>
+            </div>
+            <div class="product-box">
+                <p>new</p>
+                <img src="new-product-images/SAMSUNG_Galaxy_Z_Flip3_5G.png">
+                <h2>Mobile</h2>
+                <h3>Samsung Galaxy Z Flip3 5G</h3>
+                <h4>Rs.49,990.00</h4>
+            </div>
+            <div class="product-box">
+                <p>new</p>
+                <img src="new-product-images/Lenovo Ideapad.png">
+                <h2>Laptop</h2>
+                <h3>Lenovo Idea Pad</h3>
+                <h4>Rs.51,990.00</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== SHOP CART SECTION ======-->
+
+    <section class="shop-cart" id="shop-cart">
+        <h1>Shop house cart</h1>
+        <div class="cart-container">
+            <div class="sidebar">
+                <h1>Filters</h1>
+                <input type="text" id="txtSearch" placeholder="Search Product">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                </ul>
+                <h3>Price Range</h3>
+                <div class="price">
+                    <input type="range" id="priceRange">
+                    <span class="priceValue">500</span>
+                </div>
+            </div>
+            <div class="content">
+                <div class="products"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== TOP SELLING SECTION ======-->
+
+    <section class="top-selling" id="top-selling">
+        <h1>Top selling Products</h1>
+        <div class="top-product">
+            <div class="top-sell-product">
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/Acer_127_cm__50_inches_-tv.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Television</h2>
+                        <h3>Acer 50 inches</h3>
+                        <h5>Rs.26,990<span>Rs.26,999</span></h5>
+                    </div>
+                </div>
+
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/Acer_Extensa_15-laptop.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Laptop</h2>
+                        <h3>Acer Extensa 15</h3>
+                        <h5>Rs.36,000<span>Rs.36,990</span></h5>
+                    </div>
+                </div>
+
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/AmazonBasics_True_Wireless_in-Earbud.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Ear bud</h2>
+                        <h3>Amazon Basics</h3>
+                        <h5>Rs.900<span>Rs.999</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-sell-product">
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/AUSHA__4K_Action_Camera.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Camera</h2>
+                        <h3>AUSHA 4k</h3>
+                        <h5>Rs.2100<span>Rs.2199</span></h5>
+                    </div>
+                </div>
+
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/boAt_Stone_180_5W-speaker.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Speaker</h2>
+                        <h3>Boat Stone 180</h3>
+                        <h5>Rs.900<span>Rs.990</span></h5>
+                    </div>
+                </div>
+
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/IKALL_N17_8_tablet.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Tablet</h2>
+                        <h3>IKALL N17</h3>
+                        <h5>Rs.7400<span>Rs.7499</span></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-sell-product">
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/Infinity_JBL_Fuze_Pint-speaker.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Speaker</h2>
+                        <h3>Infinity JBL Fuze</h3>
+                        <h5>Rs.900<span>Rs.999</span></h5>
+                    </div>
+                </div>
+
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/Lenovo_Ideapad_3-laptop.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Laptop</h2>
+                        <h3>Lenovo Ideapad 3</h3>
+                        <h5>Rs.43,000<span>Rs.43,500</span></h5>
+                    </div>
+                </div>
+
+                <div class="top-product-box">
+                    <div class="top-product-image">
+                        <img src="top-selling-images/OnePlus_126_cm__50_inches_-tv.png">
+                    </div>
+                    <div class="top-product-details">
+                        <h2>Television</h2>
+                        <h3>One plus 50 inches</h3>
+                        <h5>Rs.31,000<span>Rs.31,999</span></h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ====== FOOTER SECTION ======-->
+
+    <section class="footer">
+        <div class="footer-box">
+            <div class="foot">
+                <h2><i class="fa fa-map-marker"></i>Address</h2>
+                <h3>123, abc street, abc city.</h3>
+            </div>
+            <div class="foot">
+                <h2><i class="fa fa-envelope-o"></i>E-mail</h2>
+                <h3>shop.house@gmail.com</h3>
+            </div>
+            <div class="foot">
+                <h2><i class="fa fa-mobile-phone"></i>Phone</h2>
+                <h3>+91 11111 11111</h3>
+            </div>
+            <div class="foot social">
+                <h2>Follow us on:</h2>
+                <div class="links">
+                    <button><i class="fa fa-facebook"></i></button>
+                    <button><i class="fa fa-instagram"></i></button>
+                    <button><i class="fa fa-twitter"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy 2023 <span>shop house.</span> | All rights reserved | </p>
+            <p>Designed By <span>Skyline Codewaves</span></p>
+        </div>
+    </section>
+
+
+    <!-- ====== JAVASCRIPT LINK ======-->
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
